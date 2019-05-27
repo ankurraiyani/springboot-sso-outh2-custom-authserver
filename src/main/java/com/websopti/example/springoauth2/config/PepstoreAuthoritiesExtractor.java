@@ -19,8 +19,9 @@ public class PepstoreAuthoritiesExtractor implements AuthoritiesExtractor {
 		String email = (String) map.get("email");
 		System.out.println("Email ==> "+email);
 		
-		//UserDetailService logic over here.
-		//userservice.findByEmail(email);
+		/*
+		 * Here you can autorwire the UserService and call a method findByEmail to get User object from database and return it.
+		*/
 		
 		UserLogin user = new UserLogin();
 		user.setEmail(email);
